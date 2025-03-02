@@ -1,11 +1,16 @@
-const MongoBackend = require('./services/backend/MongoBackend')
+const MongoBackend = require("./services/backend/MongoBackend")
+const RedisBackend = require("./services/backend/RedisBackend")
 
-async function run() {
+async function runMongo() {
   const mongoBackend = new MongoBackend()
-  return mongoBackend.max();
+  return mongoBackend.max()
+}
+async function runRedis() {
+  const redisBackend = new RedisBackend()
+  return redisBackend.max()
 }
 
-run()
+runRedis()
   .then((result) => {
     console.log(result);
   })

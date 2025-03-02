@@ -1,0 +1,5 @@
+{
+    "editor.fontFamily": "Cascadia Code, DejaVu Sans Mono, Hack",
+    "editor.fontSize": 10,
+    "files.autoSave": "afterDelay"
+}
