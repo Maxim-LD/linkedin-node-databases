@@ -7,7 +7,9 @@ module.exports = (config) => {
   const router = express.Router();
 
   router.get("/", async (req, res) => {
- 
+    return res.render("basket", {});
+
+    /*
     if (!res.locals.currentUser) {
       req.session.messages.push({
         type: "warning",
@@ -31,6 +33,7 @@ module.exports = (config) => {
       );
     }
     return res.render("basket", { items });
+    */
   });
 
   router.get("/remove/:itemId", async (req, res, next) => {

@@ -70,7 +70,6 @@ module.exports = () => {
 
   // Delete user
   router.get("/delete/:userId", async (req, res) => {
-
     try {
       await UserService.remove(req.params.userId);
     } catch (err) {

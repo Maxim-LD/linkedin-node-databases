@@ -6,7 +6,6 @@ const { MongoClient } = require('mongodb');
 const CoinAPI = require('../CoinAPI');
 
 class MongoBackend {
-
   constructor() {
     this.coinAPI = new CoinAPI();
     this.mongoUrl = "mongodb://localhost:37017/maxcoin";
