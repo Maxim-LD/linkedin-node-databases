@@ -3,7 +3,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const RedisStore = require('connect-redis')(session);
-const RedisStore = require("connect-redis")(session)
 
 const routeHandler = require('./routes');
 
